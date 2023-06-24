@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body * {
-  @apply transition-colors duration-300;
+* {
+  @apply transition-colors ease-out duration-300;
 }
