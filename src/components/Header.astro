@@ -1,0 +1,32 @@
+---
+import Mode from "./Mode.svelte";
+const tabs = ["pricing", "contact"];
+---
+
+<header>
+  <nav class="container flex items-center py-4 mt-4 sm:mt-8">
+    <a
+      class="dark:text-bk-light-shades text-bkl-light-shades text-3xl font-bold font-Bebas tracking-widest"
+      href="/">
+      Kfir's Portfolio
+    </a>
+    <ul
+      class="hidden sm:flex flex-1 justify-end items-center gap-12 dark:text-bk-light-shades text-bkl-light-shades uppercase text-base">
+      <Mode client:load />
+      {
+        tabs.map((tab) => (
+          <a
+            class="cursor-pointer hover:opacity-70 transition-all duration-200"
+            href={tab}>
+            {tab}
+          </a>
+        ))
+      }
+    </ul>
+    <div class="flex sm:hidden flex-1 justify-end">
+      <i
+        class="fas fa-bars text-2xl dark:text-bk-light-shades text-bkl-light-shades cursor-pointer switch"
+      ></i>
+    </div>
+  </nav>
+</header>
