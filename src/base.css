@@ -5,9 +5,5 @@
 @tailwind utilities;
 
 body * {
-  @apply transition-colors duration-500;
-}
-
-switch {
-  @apply transition-colors duration-100;
+  @apply transition-colors duration-300;
 }
