@@ -3,6 +3,13 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: "class",
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1600px",
+      xl: "1800px",
+      "2xl": "1920px",
+    },
     extend: {
       colors: {
         "bk-dark-shades": "#153347",
@@ -23,15 +30,11 @@ module.exports = {
     fontFamily: {
       Poopins: ["Poopins, sans-serif"],
       Bebas: ["Bebas Neue, sans-serif"],
+      Outfit: ["Outfit, sans-serif"],
     },
     container: {
       center: true,
       padding: "1rem",
-      screens: {
-        lg: "1600px",
-        xl: "1600px",
-        "2xl": "1600px",
-      },
     },
   },
   plugins: [],

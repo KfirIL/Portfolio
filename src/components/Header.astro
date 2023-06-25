@@ -1,12 +1,13 @@
 ---
 import Mode from "./Mode.svelte";
+import MobileMenu from "./MobileMenu.svelte";
 const tabs = ["pricing", "contact"];
 ---
 
 <header>
   <nav class="container flex items-center py-4 mt-4 sm:mt-8">
     <a
-      class="dark:text-bk-light-shades text-bkl-light-shades text-3xl font-bold font-Bebas tracking-widest"
+      class="dark:text-bk-light-shades text-bkl-light-shades text-3xl font-bold font-Bebas tracking-widest p-4"
       href="/">
       Kfir's Portfolio
     </a>
@@ -23,10 +24,6 @@ const tabs = ["pricing", "contact"];
         ))
       }
     </ul>
-    <div class="flex sm:hidden flex-1 justify-end">
-      <i
-        class="fas fa-bars text-2xl dark:text-bk-light-shades text-bkl-light-shades cursor-pointer switch"
-      ></i>
-    </div>
+    <MobileMenu client:load />
   </nav>
 </header>
