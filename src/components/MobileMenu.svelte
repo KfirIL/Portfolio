@@ -17,7 +17,7 @@
 </div>
 
 {#if !isHidden}
-<ul transition:fade class="dark:text-bk-light-shades text-bkl-light-shades flex flex-col absolute right-0 left-0 items-center top-20 dark:bg-bk-dark-shades bg-bkl-dark-shades py-12 gap-6 z-50 uppercase">
+<ul transition:fade class="dark:text-bk-light-shades text-bkl-light-shades border-y-[1px] dark:border-bk-light-accent border-bkl-light-accent flex flex-col absolute right-0 left-0 items-center top-24 dark:bg-bk-dark-shades bg-bkl-dark-shades py-12 gap-6 z-50 uppercase">
     <a href="/pricing" class="cursor-pointer hover:opacity-70 transition-all duration-200">Pricing</a>
     <hr class="h-px w-11/12">
     <a href="/contact" class="cursor-pointer hover:opacity-70 transition-all duration-200">Contact</a>
